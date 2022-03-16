@@ -54,7 +54,7 @@ describe('backend-anyapi routes', () => {
     expect(res.body).toEqual(expected);
   });
 
-  it('deletes a dog by id', async () => {
+  it('deletes a neopet by id', async () => {
     const expected = await Neopet.findById(1);
     const res = await request(app).delete(`/api/v1/neopets/${expected.id}`);
 
